@@ -3,7 +3,7 @@
 from urllib import request
 import json
 
-channels_url = 'https://github.com/ericziethen/ez-iptvcat-scraper/blob/master/data/countries/france.json'
+channels_url = 'https://raw.githubusercontent.com/ericziethen/ez-iptvcat-scraper/master/data/countries/france.json'
 channels_json = request.urlopen(channels_url).read().decode('utf8')
 channels = json.loads(channels_json)
 
